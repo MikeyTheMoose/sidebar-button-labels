@@ -11,3 +11,6 @@ FoundryVTT - displays the labels of the sidebar and scene control buttons when a
 
 ### AI Disclosue
 I am an IT developer and know how to write code. However, this module was drafted almost exclusively utilizing generative AI tools (Claude). As the author, I have fully reviewed, tested, and debugged all generated code.
+
+### Installation
+Manifest URL: https://github.com/MikeyTheMoose/sidebar-button-labels/releases/latest/download/module.json
