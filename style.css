@@ -1,0 +1,60 @@
+.stl-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-index-tooltip, 9999);
+}
+
+.stl-container .stl-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.4em 0.7em;
+  white-space: nowrap;
+  font-family: var(--font-sans, sans-serif);
+  font-size: var(--stl-font-size, 14px);
+  line-height: 1.2;
+  color: var(--color-light-1, #eee);
+  background: var(--color-cool-5-90, rgba(15, 15, 20, 0.92));
+  border: 1px solid var(--color-cool-4, #444);
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 150ms ease, transform 150ms ease, border-color 100ms, background 100ms;
+}
+
+.stl-container.interactive .stl-label {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Sidebar button labels (left of button)*/
+.stl-container[data-side="left"] .stl-label {
+  margin-right: 8px;
+  transform: translate(8px, -50%);
+}
+
+/* Scene Control labels (right of button)*/
+.stl-container[data-side="right"] .stl-label {
+  margin-left: 8px;
+  transform: translate(-8px, -50%);
+}
+
+.stl-container .stl-label.visible {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.stl-container .stl-label.active {
+  color: var(--color-light-1, #fff);
+  border-color: var(--color-light-5, #888);
+  background: var(--color-cool-4, rgba(40, 40, 55, 0.95));
+}
+
+/* "Animate Labels" setting turned off */
+body.stl-no-animate .stl-container .stl-label {
+  transition: none;
+  transform: translate(0, -50%);
+}

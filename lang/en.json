@@ -1,0 +1,48 @@
+{
+  "SIDEBAR_BUTTON_LABELS": {
+    "settings": {
+      "enabled": {
+        "name": "Enable Hover Labels",
+        "hint": "Master switch. When disabled, Foundry's default single tooltips are used everywhere."
+      },
+      "sidebar": {
+        "name": "Label Sidebar Buttons",
+        "hint": "Hovering a sidebar button shows the labels of all sidebar buttons."
+      },
+      "sceneControls": {
+        "name": "Label Scene Controls",
+        "hint": "Which scene control buttons show all of their labels when hovered.",
+        "choices": {
+          "both": "Layers + Tools",
+          "layers": "Layers",
+          "tools": "Tools",
+          "none": "None"
+        }
+      },
+      "clickableLabels": {
+        "name": "Clickable Labels",
+        "hint": "Clicking a label activates its button. (Scene layer labels are never clickable, as they would cover the tools.)"
+      },
+      "highlightHovered": {
+        "name": "Highlight Hovered Label",
+        "hint": "Highlight the label that belongs to the button you are hovering."
+      },
+      "animate": {
+        "name": "Animate Labels",
+        "hint": "Fade and slide labels in and out."
+      },
+      "showDelay": {
+        "name": "Show Delay (ms)",
+        "hint": "How long to hover before labels appear. 0 shows them immediately."
+      },
+      "hideDelay": {
+        "name": "Hide Delay (ms)",
+        "hint": "How long labels stay after the cursor leaves the area."
+      },
+      "fontSize": {
+        "name": "Label Font Size (px)",
+        "hint": "Size of the label text."
+      }
+    }
+  }
+}

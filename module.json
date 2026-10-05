@@ -1,0 +1,18 @@
+{
+  "id": "sidebar-button-labels",
+  "title": "Sidebar Button Labels",
+  "description": "Hovering a sidebar button, scene layer, or scene tool button shows the labels for every button in that group, and keeps them visible until the cursor leaves the area.",
+  "version": "1.2.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    { "name": "MikeyTheMoose" }
+  ],
+  "esmodules": ["script.js"],
+  "styles": ["style.css"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" }
+  ]
+}
